@@ -13,6 +13,8 @@ export default function Question() {
     const [color, setColor] = useState('green')
     const [track, setTrack] = useState('');
     const [speakingState, setSpeakingState] = useState(false)
+    const [lapCount, setLapCount] = useState('');
+
 
     async function fetchApi(prompt, driver) {
         console.log(prompt)
@@ -25,7 +27,8 @@ export default function Question() {
             body: JSON.stringify({
                 prompt: prompt,
                 driver: driver,
-                track: track
+                track: track,
+                lapCount: lapCount
             })
         })
         const data = await response.json()
@@ -54,6 +57,7 @@ export default function Question() {
 
     const clearArray = () => {
         setDriver('')
+        setLapCount('')
         setColor("grey")
         setTrack("")
         setShowInitialForm(true)
@@ -157,6 +161,8 @@ export default function Question() {
                             setDriver={setDriver}
                             setTrack={setTrack}
                             track={track}
+                            lapCount={lapCount}
+                            setLapCount={setLapCount}
                         />
                     </div>
                 )}

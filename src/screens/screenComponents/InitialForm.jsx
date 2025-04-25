@@ -8,10 +8,9 @@ function InitialForm({
                          vraag,
                          setDriverChange,
                          driver,
-                         setDriver, setTrack, track
+                         setDriver, setTrack, track, lapCount, setLapCount
                      }) {
     const [yourDriver, setYourDriver] = useState('');
-    const [lapCount, setLapCount] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
 
