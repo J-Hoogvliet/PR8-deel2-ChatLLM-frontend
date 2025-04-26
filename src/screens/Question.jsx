@@ -113,7 +113,7 @@ export default function Question() {
 
     return (
         <div style={{backgroundColor: color, color: 'white', padding: '30px', borderRadius: '10px'}}>
-            <h1 style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '20px'}}>Jouw Raceengineer</h1>
+            <h1 style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '20px'}}>Jouw RaceEngineer</h1>
             <p style={{fontSize: '14px', fontWeight: 'bold', marginBottom: '20px'}}>Geef eerst wat de instellingen mee en gebruik mij daarna als hulpmiddel voor jou race!</p>
 
             {opgeslagenVraag && (
